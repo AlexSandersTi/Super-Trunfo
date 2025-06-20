@@ -3,22 +3,24 @@
 
 int main() {
     // Declaração das variáveis para a Carta 1
-    char estado1;
+    char estado1;/*Estado: Uma letra de 'A' a 'H' (representando um dos oito estados). Tipo: char*/
     char codigo1[4];
-    char nome1[50];
-    int populacao1;
-    float area1;
-    float pib1;
-    int pontos1;
+    /*Código da Carta: A letra do estado seguida de um número de 01 a 04 (ex: A01, B03). Tipo: char[] (um array de caracteres, ou string)*/
+    char nome1[50];/*Nome da Cidade: O nome da cidade. Tipo: char[] (string)*/
+    int populacao1;/*População: O número de habitantes da cidade. Tipo: int*/
+    float area1;/*Área (em km²): A área da cidade em quilômetros quadrados. Tipo: float*/
+    float pib1;/*PIB: O Produto Interno Bruto da cidade. Tipo: float*/
+    int pontos1;/*Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade. Tipo: int*/
 
     // Declaração das variáveis para a Carta 2
-    char estado2;
+    char estado2;/*Estado: Uma letra de 'A' a 'H' (representando um dos oito estados). Tipo: char*/
     char codigo2[4];
-    char nome2[50];
-    int populacao2;
-    float area2;
-    float pib2;
-    int pontos2;
+    /*Código da Carta: A letra do estado seguida de um número de 01 a 04 (ex: A01, B03). Tipo: char[] (um array de caracteres, ou string)*/
+    char nome2[50];/*Nome da Cidade: O nome da cidade. Tipo: char[] (string)*/
+    int populacao2;/*População: O número de habitantes da cidade. Tipo: int*/
+    float area2;/*Área (em km²): A área da cidade em quilômetros quadrados. Tipo: float*/
+    float pib2;/*PIB: O Produto Interno Bruto da cidade. Tipo: float*/
+    int pontos2;/*Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade. Tipo: int*/
 
     // Cadastro da Carta 1
     printf("Cadastro da Carta 1:\n");
@@ -29,6 +31,7 @@ int main() {
     printf("Informe o Código da Carta (ex: A01): ");
     scanf("%3s", codigo1);
 
+    /*O getchar() aqui serve para remover um único caractere (o \n que sobrou), preparando o caminho para o fgets() ler a próxima entrada corretamente.*/
     printf("Informe o Nome da Cidade: ");
     getchar(); // Limpa o buffer
     fgets(nome1, sizeof(nome1), stdin);
@@ -55,6 +58,7 @@ int main() {
     printf("Informe o Código da Carta (ex: A01): ");
     scanf("%3s", codigo2);
 
+     /*O getchar() aqui serve para remover um único caractere (o \n que sobrou), preparando o caminho para o fgets() ler a próxima entrada corretamente.*/
     printf("Informe o Nome da Cidade: ");
     getchar(); // Limpa o buffer
     fgets(nome2, sizeof(nome2), stdin);
