@@ -55,10 +55,9 @@ int main() {
     printf("Informe o Estado (A a H): ");
     scanf(" %c", &estado2);
 
+    /*O getchar() aqui serve para remover um único caractere (o \n que sobrou), preparando o caminho para o fgets() ler a próxima entrada corretamente.*/
     printf("Informe o Código da Carta (ex: A01): ");
     scanf("%3s", codigo2);
-
-     /*O getchar() aqui serve para remover um único caractere (o \n que sobrou), preparando o caminho para o fgets() ler a próxima entrada corretamente.*/
     printf("Informe o Nome da Cidade: ");
     getchar(); // Limpa o buffer
     fgets(nome2, sizeof(nome2), stdin);
